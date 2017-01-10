@@ -35,10 +35,10 @@
             <ul class="sidebar-nav">
                 <div class="sidebar-about">
                     <h1>
-                    Casey Casalnuovo
+                     &nbsp; Casey </br> &nbsp; Casalnuovo
                     </h1>
                     <p class="lead">
-                    Computer Science Graduate Student at <a href="https://www.ucdavis.edu/">UC Davis</a>.
+                    &nbsp; &nbsp; Computer Science </br> &nbsp; &nbsp; Graduate Student at </br> &nbsp; &nbsp; <a href="https://www.ucdavis.edu/">UC Davis</a>.
                     </p>
                 </div>
                 <li>
@@ -78,16 +78,6 @@
                         language modeling shows that the actual text of natural language is less repetitive, less predictable, and more ambiguous than
                         code.  Some of this restrictiveness is imposed by the constraints of code - the need for code to compile, restricted grammar, etc, but is some of it also a deliberate choice by developers to constrain their choices in code because the language is more difficult?  While good coding style recommends code re-use via modularization, copy pasted code and patterns are still quite
                         common.  I would like to more formally define language difficulty and associate it with the observable features of humans.  This would allow a grounded approach to comparing not only between natural language and programming language, but also between different programming languages.  Knowing what elements of programming are most cognitively difficult would allow better tools and more targeted approaches to making programming languages both easier to learn and use. </p>
-
-                        <h2>Automatic Syntax Correction in Student Programs</h2>
-                        <p>
-                        Finding and fixing software defects are very costly, causing <a href="http://www.prweb.com/releases/2013/1/prweb10298185.htm">billions</a> of dollars of expenses each year.  Many techniques to reduce this cost or prevent defects have been developed, but the problem persists.  One tactic to resolve this problem is to automatically find and fix errors.  However, due to the scale of the problem, this is no easy task, and it is likely that only a subset of defects will be amenable to automatic fixes.</p>
-
-                        <p>
-                        Therefore, we have developed a more controlled dataset of simple student programs to test using language models and machine learning techniques.  We track student submissions through version control to see how they develop over time, gaining information
-                        on how many students attempt the sample assignments, the kinds of defects introduced, and the fixes developed to create correctly
-                        working programs.  The goal is to find what machine learning and language modeling techniques can best learn from the student fixes and how effective they can be.  If we can find effective enough fixes in this much more controlled context, we would like to extend what we find to larger programs to see what bugs these techniques can fix in a real software context.
-                        </p>
 
                         <h2> Gitcproc </h2>
                         <p><a href="https://github.com/caseycas/gitcproc">Gitcproc</a> is a tool to parse git logs to discover the context in which code structures appear in a language independent manner.  The idea is to use regular expressions to capture function context and scope changes to track where user defined terms change in a more reliable way that the basic git suite.  Currently works for Python, C, C++, and Java.</p>
