@@ -66,21 +66,26 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-lg-12">
-                    <h1>Current Projects:</h1>
+                    <h1>Current Research:</h1>
+                        
+                        <h2>The Theory Dual Channel Constraints in Software</h2>
+                        <p>Code provides a unique environment to study human cognitive processes
+                        as it has <em>dual channel constraints</em> - developers simultaneously
+                        write code for two 'audiences', one for the machine that executes code
+                        and one for the humans that must read, comprehend, and maintain it. The
+                        natural language (NL) channel (comments, variable names, how code is structured, etc.) targets
+                        <em>only</em> the developer and the algorithmic (AL) channel (the derived executable meaning of the code) is used by <em>both developers and the machine</em>. Acknowledging the asymmetries in these channels and using their interactions are underexplored research areas that can be used to improve software engineering and program analysis tools.</p>  
+                        <p>Moreover, though coding shares some properties with 
+                        natural language, these constraints (among other things) impact how code is written, and the formal AL channel of code enables experiments not possible in
+                        natural language.  Therefore, studies of code can teach us not only about how
+                        humans think when coding, but also by contrast about how they think when writing natural language.</p>
 
-                        Below are a list of some of the current projects I'm working on with links to any related publically available code repositories.
+                        <h3>Meaning Equivalent Transformations and Language Surprisal</h3>
+                        <p>The use of language models for code has led to an explosion of tools for purposes such as defect prediction and repair, code completion, and recovering minified/obfuscated code.  Underlying many of these tools is the metric of surprisal, with lower model surprisal being considered 'better'. Though surprisal has been linked to cognitive load in natural language, it's role in programming language is less understood.</p>
 
-                        <h2>Natural Language and Programming Language Comparisons</h2>
-
-                        <p>Intuition suggests people find reading and writing programs more difficult than their native languages.  However, statistical
-                        language modeling shows that the actual text of natural language is less repetitive, less predictable, and more ambiguous than
-                        code.  Some of this restrictiveness is imposed by the constraints of code - the need for code to compile, restricted grammar, etc, but is some of it also a deliberate choice by developers to constrain their choices in code because the language is more difficult?  While good coding style recommends code re-use via modularization, copy pasted code and patterns are still quite
-                        common.  I would like to more formally define language difficulty and associate it with the observable features of code and natural language.  This would allow a grounded approach to comparing not only between natural language and programming language, but also between different programming languages.  Knowing what elements of programming are most cognitively difficult would allow better tools and more targeted approaches to making programming languages both easier to learn and use. </p>
+                        <p>My current project takes advantage of these dual channel constraints to study the impact of language model surprisal in code and help validate its use. We can create code that is exactly equivalent on the AL channel, but different in NL channel; i.e. code with the same meaning, but different implementations.  This framing lets us precisely measure the effect of surprisal in a way not possible in natural language, where different ways of saying things can possess different connotative meaning.  I have been presenting equivalent code fragments with different surprisal to human subjects to see how they impact preference and ease of comprehension.  Do humans prefer less surprising code?  Can they execute such code more accurately and quickly? How large are these effects, and can such transformations be used to improve existing software?</p>
 
 
-                    <h1>Other:</h1>
-                        <h2>Cache Model</h2>
-                        <p>I have repackaged and slightly modified <a href="http://dl.acm.org/citation.cfm?id=2635875">Zhaopeng Tu's Cache Model</a> in a more easily used form and included sample corpora from both code and English sources.  Check it out <a href="https://github.com/caseycas/CacheModelPackage">here</a>.</p>
                     </div>
                 </div>
             </div>
